@@ -31,7 +31,7 @@ $arr = array();
         array_push($arr, $temp);
     }
 
-echo json_encode($arr,'UTF-8');
+echo json_encode($arr,JSON_UNESCAPED_UNICODE);
 
 
 
