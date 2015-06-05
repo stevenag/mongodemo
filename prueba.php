@@ -21,7 +21,7 @@ $colección = $bd->noticias;
 $cursor = $colección->find();
 
 // recorrer el resultado
-echo $cursor;
+echo json_encode(iterator_to_array($cursor));
 
 /*foreach ($cursor as $documento) {
     echo $documento["titulo"] . "\n";
