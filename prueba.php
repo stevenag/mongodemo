@@ -21,8 +21,10 @@ $colección = $bd->noticias;
 $cursor = $colección->find();
 
 // recorrer el resultado
-foreach ($cursor as $documento) {
+echo $cursor;
+
+/*foreach ($cursor as $documento) {
     echo $documento["titulo"] . "\n";
-}
+}*/
 
 ?>
